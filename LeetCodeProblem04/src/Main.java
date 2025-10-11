@@ -1,34 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-    public int[][] twoSum(int[] nums, int target) {
-        int[][] numsArray = new int[2][nums.length];
-        int point = 0;
-        int point2 = 1;
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> map = new LinkedHashMap<>();
 
         for (int i = 0; i < nums.length; i++){
 
-                numsArray[point][i] = nums[i];
+            if (map.containsKey(nums[i])){
+                return new int[] {map.get(nums[i]), i};
+            }
+
+            map.put(target - nums[i], i);
+
 
         }
 
-        
+        return null;
 
-
-
-
-
-        return numsArray;
     }
-
 
     public static void main(String[] args) {
-        Main main = new Main();
+        Solution solution = new Solution();
 
-        System.out.println(main.twoSum(new int[] {0, 1, 2, 3}, 4).toString());
+        int[] arrayNums = {3,2,7,4,11,1};
 
-
-
+        System.out.println(Arrays.toString(solution.twoSum(arrayNums, 8)));
     }
+
+
 }
