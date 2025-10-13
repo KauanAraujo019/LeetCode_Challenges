@@ -8,4 +8,4 @@ Problem 3: LengthOfLastWord
 
 Problem 4: TwoSum 
 
-problem 5: SearchInsertPosition
+Problem 5: SearchInsertPosition
