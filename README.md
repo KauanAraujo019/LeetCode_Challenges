@@ -9,3 +9,5 @@ Problem 3: LengthOfLastWord
 Problem 4: TwoSum 
 
 Problem 5: SearchInsertPosition
+
+Problem 6: Climbing Stairs
