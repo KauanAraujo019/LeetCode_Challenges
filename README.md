@@ -11,3 +11,5 @@ Problem 4: TwoSum
 Problem 5: SearchInsertPosition
 
 Problem 6: Climbing Stairs
+
+Problem 7: Roman to Integer
